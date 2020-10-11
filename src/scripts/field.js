@@ -3,8 +3,8 @@ const plantedField = [];
 export const addPlant = (seedObj) => {
     
     if (Array.isArray(seedObj) === true) {
-        for (const seed of seedObj) {
-            plantedField.push(seed)
+        for (let i = 0; i < seedObj.length; i++) {
+            plantedField.push(i)
         }
     }
     plantedField.push(seedObj);

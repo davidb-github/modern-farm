@@ -2,7 +2,7 @@ import { createPlan } from './plan.js'
 
 const yearlyPlan = createPlan();
 
-console.log(yearlyPlan);
+// console.log(yearlyPlan);
 
 // debug
 import { createSoybean } from './seeds/soybean.js'
@@ -15,7 +15,7 @@ import { addPlant, usePlants } from './field.js'
 
 console.log("Welcome to the main module")
 
-const soybeanSeed = createSoybean();
+// const soybeanSeed = createSoybean();
 const cornSeed = createCorn();
 // const sunflowerSeed = createSunflower();
 // const asparagusSeed = createAsparagus();
@@ -26,10 +26,14 @@ const cornSeed = createCorn();
 const plantedSeed = addPlant(cornSeed);
 const sewnField = usePlants();
 
+// const plantedSeed = addPlant(soybeanSeed);
+// const sewnField = usePlants();
+
 
 
 // console.log(soybeanSeed, cornSeed, sunflowerSeed, asparagusSeed, wheatSeed, potatoSeed )
-console.log(plantedSeed, sewnField);
+// console.log(plantedSeed);
+console.log(sewnField);
 
 
 
