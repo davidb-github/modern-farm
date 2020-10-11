@@ -12,5 +12,6 @@ const cornSeedCollection = [
 ]
 
 export const createCorn = () => {
+    
     return cornSeedCollection;
 }

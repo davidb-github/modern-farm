@@ -1,4 +1,4 @@
-const soybeanSeedCollection = [
+const soybeanSeed = [
     {
         plant: "Soybean",
         height: 20,
@@ -10,5 +10,5 @@ const soybeanSeedCollection = [
 
 export const createSoybean = () => {
     
-    return soybeanSeedCollection;
+    return soybeanSeed;
 }

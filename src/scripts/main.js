@@ -2,14 +2,18 @@
 
 import { createSoybean } from './seeds/soybean.js'
 import { createCorn } from './seeds/corn.js'
+import { createSunflower } from './seeds/sunflower.js'
+import { createAsparagus } from './seeds/asparagus.js'
+
 
 console.log("Welcome to the main module")
 
 const soybeanSeed = createSoybean();
-console.log(soybeanSeed);
-
 const cornSeed = createCorn();
-console.log(cornSeed);
+const sunflowerSeed = createSunflower();
+const asparagusSeed = createAsparagus();
+
+console.log(soybeanSeed, cornSeed, sunflowerSeed, asparagusSeed)
 
 
 
