@@ -1,6 +1,6 @@
 export const createSoybean = () => {
     const soybean = {
-        type: "Soybean",
+        plant: "Soybean",
         height: 20,
         output: 4
     }
