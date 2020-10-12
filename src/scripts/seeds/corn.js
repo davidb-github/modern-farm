@@ -1,6 +1,6 @@
 const cornSeedCollection = [
     {
-        plant: "Corn",
+        plant: "corn",
         height: 180,
         output: 6
     },
