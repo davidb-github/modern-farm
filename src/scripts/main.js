@@ -1,8 +1,11 @@
 import { createPlan } from './plan.js'
+import { plantSeeds } from './tractor.js'
 
 const yearlyPlan = createPlan();
+const plan = plantSeeds(yearlyPlan)
 
 console.log(yearlyPlan);
+console.log(plan)
 
 
 // import { createSoybean } from './seeds/soybean.js'
@@ -12,11 +15,11 @@ console.log(yearlyPlan);
 // import { createWheat } from './seeds/wheat.js'
 // import { createPotato } from './seeds/potato.js'
 // import { addPlant, usePlants } from './field.js'
-import { plantSeeds } from './tractor.js'
-const plan = plantSeeds(yearlyPlan)
-console.log(plan)
 
-console.log("Welcome to the main module")
+
+
+
+// console.log("Welcome to the main module")
 
 // const soybeanSeed = createSoybean();
 // const cornSeed = createCorn();
