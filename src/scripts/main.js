@@ -4,7 +4,7 @@ const yearlyPlan = createPlan();
 
 console.log(yearlyPlan);
 
-debugger
+
 // import { createSoybean } from './seeds/soybean.js'
 // import { createCorn } from './seeds/corn.js'
 // import { createSunflower } from './seeds/sunflower.js'
