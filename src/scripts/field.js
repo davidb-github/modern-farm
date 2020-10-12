@@ -2,12 +2,13 @@ const plantedField = [];
 
 export const addPlant = (seedObj) => {
     // debugger
-    if (Array.isArray(seedObj) === true) {
+    if (Array.isArray(seedObj) ) {
         seedObj.forEach(element => {
             plantedField.push(element)
         });  
-      }
+      } else {
         plantedField.push(seedObj);
+      }
     }
 
 
