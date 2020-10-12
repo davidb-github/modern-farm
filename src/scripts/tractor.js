@@ -4,17 +4,17 @@ import { createAsparagus } from './seeds/asparagus.js'
 import { createWheat } from './seeds/wheat.js'
 import { createPotato } from "./seeds/potato.js";
 import { createSunflower } from './seeds/sunflower.js'
-import { addPlant } from './field.js'
+import { addPlant, usePlants } from './field.js'
 
 
 
 export const plantSeeds = (yearlyPlan) => {
-    const plan = []
+    let seed = {};
 
     for (let index = 0; index < yearlyPlan.length; index++) {
-        let seed = {};
+
         for (let j = 0; j < 6; j++) {
-            debugger
+            // debugger
             const expr = yearlyPlan[index]; //
             switch (expr[j]) {
                 case "Soybean":
@@ -44,6 +44,9 @@ export const plantSeeds = (yearlyPlan) => {
             }
         }
     }
+    const plantedSeeds = usePlants();
+    return plantedSeeds;
+
 }
 
 
@@ -54,3 +57,7 @@ export const plantSeeds = (yearlyPlan) => {
 //  invoke the createAsparagus function to get an asparagus seed).
 // "Soybean", "Corn", "Asparagus", "Wheat", "Potato", "Sunflower"
 // Take that seed and add it to the array of plants in the field module
+
+// In the main.js module, invoke the function that plants all of the seeds, 
+// and then get the plants array from the fields.js module. 
+// Then use console.log() to see if the plants array has been populated correctly.
