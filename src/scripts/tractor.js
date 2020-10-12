@@ -12,10 +12,11 @@ export const plantSeeds = (yearlyPlan) => {
     const plan = []
 
     for (let index = 0; index < yearlyPlan.length; index++) {
-        // const row = []
+        let seed = {};
         for (let j = 0; j < 6; j++) {
-            const expr = yearlyPlan[j]; //debugger shows array of 6 elements
-            switch (expr) {
+            debugger
+            const expr = yearlyPlan[index]; //
+            switch (expr[j]) {
                 case "Soybean":
                     seed = createSoybean();
                     addPlant(seed);
