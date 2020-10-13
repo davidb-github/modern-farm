@@ -1,11 +1,15 @@
+import { usePlants } from './field.js';
 import { createPlan } from './plan.js'
 import { plantSeeds } from './tractor.js'
+import { harvestPlants } from './harvester.js'
 
 const yearlyPlan = createPlan();
 const plan = plantSeeds(yearlyPlan)
+const harvest = harvestPlants(usePlants);
 
 console.log(yearlyPlan);
 console.log(plan)
+console.log(harvest)
 
 
 // import { createSoybean } from './seeds/soybean.js'
