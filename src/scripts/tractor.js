@@ -7,9 +7,8 @@ import { createSunflower } from './seeds/sunflower.js'
 import { addPlant, usePlants } from './field.js'
 
 
-
 export const plantSeeds = (yearlyPlan) => {
-    let seed = {};
+    let seed = [];
 
     for (let index = 0; index < yearlyPlan.length; index++) {
 
